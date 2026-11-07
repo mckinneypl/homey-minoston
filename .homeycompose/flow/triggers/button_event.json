@@ -1,0 +1,87 @@
+{
+  "title": {
+    "en": "A button action occurred"
+  },
+  "titleFormatted": {
+    "en": "[[button]] - [[action]]"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=mr40z"
+    },
+    {
+      "type": "dropdown",
+      "name": "button",
+      "title": {
+        "en": "Button"
+      },
+      "values": [
+        {
+          "id": "1",
+          "title": {
+            "en": "Button 1"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "Button 2"
+          }
+        },
+        {
+          "id": "3",
+          "title": {
+            "en": "Button 3"
+          }
+        },
+        {
+          "id": "4",
+          "title": {
+            "en": "Button 4"
+          }
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "name": "action",
+      "title": {
+        "en": "Action"
+      },
+      "values": [
+        {
+          "id": "single",
+          "title": {
+            "en": "Pressed 1 time"
+          }
+        },
+        {
+          "id": "double",
+          "title": {
+            "en": "Pressed 2 times"
+          }
+        },
+        {
+          "id": "triple",
+          "title": {
+            "en": "Pressed 3 times"
+          }
+        },
+        {
+          "id": "held",
+          "title": {
+            "en": "Held down"
+          }
+        },
+        {
+          "id": "released",
+          "title": {
+            "en": "Released"
+          }
+        }
+      ]
+    }
+  ]
+}

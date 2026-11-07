@@ -1,0 +1,160 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png"
+  },
+  "brandColor": "#222222",
+  "id": "com.percy.minoston",
+  "version": "1.0.0",
+  "compatibility": ">=12.0.0",
+  "sdk": 3,
+  "runtime": "nodejs",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Minoston Z-Wave Remote"
+  },
+  "description": {
+    "en": "Homey Pro support for Minoston Z-Wave scene controllers"
+  },
+  "category": "tools",
+  "permissions": [],
+  "author": {
+    "name": "Percy McKinney"
+  },
+  "flow": {
+    "triggers": [
+      {
+        "title": {
+          "en": "A button action occurred"
+        },
+        "titleFormatted": {
+          "en": "[[button]] - [[action]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=mr40z"
+          },
+          {
+            "type": "dropdown",
+            "name": "button",
+            "title": {
+              "en": "Button"
+            },
+            "values": [
+              {
+                "id": "1",
+                "title": {
+                  "en": "Button 1"
+                }
+              },
+              {
+                "id": "2",
+                "title": {
+                  "en": "Button 2"
+                }
+              },
+              {
+                "id": "3",
+                "title": {
+                  "en": "Button 3"
+                }
+              },
+              {
+                "id": "4",
+                "title": {
+                  "en": "Button 4"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "action",
+            "title": {
+              "en": "Action"
+            },
+            "values": [
+              {
+                "id": "single",
+                "title": {
+                  "en": "Pressed 1 time"
+                }
+              },
+              {
+                "id": "double",
+                "title": {
+                  "en": "Pressed 2 times"
+                }
+              },
+              {
+                "id": "triple",
+                "title": {
+                  "en": "Pressed 3 times"
+                }
+              },
+              {
+                "id": "held",
+                "title": {
+                  "en": "Held down"
+                }
+              },
+              {
+                "id": "released",
+                "title": {
+                  "en": "Released"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "button_event"
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "MR40Z 4-Button Scene Controller"
+      },
+      "class": "sensor",
+      "images": {
+        "small": "/drivers/mr40z/assets/images/small.png",
+        "large": "/drivers/mr40z/assets/images/large.png"
+      },
+      "capabilities": [
+        "measure_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "AAA"
+        ]
+      },
+      "connectivity": [
+        "zwave"
+      ],
+      "zwave": {
+        "manufacturerId": 786,
+        "productTypeId": [
+          2340
+        ],
+        "productId": [
+          53249
+        ],
+        "associationGroups": [
+          1
+        ],
+        "learnmode": {
+          "instruction": {
+            "en": "Put the MR40Z into Z-Wave inclusion mode."
+          }
+        }
+      },
+      "id": "mr40z"
+    }
+  ]
+}

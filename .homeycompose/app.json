@@ -1,0 +1,27 @@
+{
+
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png"
+  },
+  "brandColor": "#222222",
+  "id": "com.percy.minoston",
+  "version": "1.0.0",
+  "compatibility": ">=12.0.0",
+  "sdk": 3,
+  "runtime": "nodejs",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Minoston Z-Wave Remote"
+  },
+  "description": {
+    "en": "Homey Pro support for Minoston Z-Wave scene controllers"
+  },
+  "category": "tools",
+  "permissions": [],
+  "author": {
+    "name": "Percy McKinney"
+  }
+}

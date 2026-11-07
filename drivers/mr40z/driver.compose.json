@@ -1,0 +1,36 @@
+{
+  "name": {
+    "en": "MR40Z 4-Button Scene Controller"
+  },
+  "class": "sensor",
+  "images": {
+    "small": "/drivers/mr40z/assets/images/small.png",
+    "large": "/drivers/mr40z/assets/images/large.png"
+   },
+  "capabilities": ["measure_battery"],
+  "energy": {
+    "batteries": [
+      "AAA"
+    ]
+  },
+  "connectivity": [
+    "zwave"
+  ],
+  "zwave": {
+    "manufacturerId": 786,
+    "productTypeId": [
+      2340
+    ],
+    "productId": [
+      53249
+    ],
+    "associationGroups": [
+      1
+    ],
+    "learnmode": {
+      "instruction": {
+        "en": "Put the MR40Z into Z-Wave inclusion mode."
+      }
+    }
+  }
+}

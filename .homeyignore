@@ -1,0 +1,15 @@
+.git/
+.gitignore
+*.log
+node_modules/eslint/
+node_modules/@eslint/
+node_modules/@eslint-community/
+node_modules/@typescript-eslint/
+node_modules/typescript/
+node_modules/eslint-*/
+node_modules/esquery/
+node_modules/es-abstract/
+node_modules/graphemer/
+node_modules/tsconfig-paths/
+node_modules/uri-js/
+node_modules/ajv/

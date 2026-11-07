@@ -1,0 +1,16 @@
+{
+  "name": "com.percy.minoston",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "homey-zwavedriver": "^2.2.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-athom": "^4.0.1",
+    "homey": "^4.4.3"
+  }
+}
